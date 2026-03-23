@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Doxify — Free Professional Document Generator | Salary Slip, NOC, Experience Letter, Visa Letter, Freelance Contract</title>
+<meta name="description" content="Free online professional document generator used worldwide. Create salary slips, salary certificates, NOC letters, experience letters, visa cover letters, freelance contracts and bank statement explanation letters instantly. No login. No watermark. Clean PDF."/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#f4f2ed;--surface:#fff;--border:#e2ddd4;--text:#1a1814;--muted:#8a8578;
+  --accent:#1b5e3b;--accent2:#2ecc71;--gold:#c8920a;--blue:#1a4fa0;--red:#c1440e;--purple:#6b3fa0;
+  --shadow:0 4px 24px rgba(0,0,0,0.07);--shadow-lg:0 12px 48px rgba(0,0,0,0.12);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:0.5;}
+
+/* NAV */
+.ad-banner{background:#1a1814;color:#f4f2ed;text-align:center;padding:9px 16px;font-size:12px;display:flex;align-items:center;justify-content:center;gap:10px;}
+.ad-banner strong{color:var(--accent2);}
+.ad-lbl{font-family:'JetBrains Mono',monospace;font-size:9px;color:#555;border:1px solid #444;padding:1px 5px;border-radius:3px;}
+header{position:sticky;top:0;z-index:50;background:rgba(244,242,237,0.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);padding:0 40px;}
+.nav-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:62px;}
+.logo{font-family:'Playfair Display',serif;font-size:24px;font-weight:900;letter-spacing:-0.5px;display:flex;align-items:center;gap:10px;}
+.logo-icon{width:32px;height:32px;background:var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;}
+.logo em{color:var(--accent);font-style:normal;}
+.logo-tag{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);background:var(--border);padding:2px 7px;border-radius:4px;letter-spacing:1px;text-transform:uppercase;}
+.nav-links{display:flex;gap:4px;}
+.nav-link{font-size:12px;font-weight:500;color:var(--muted);padding:6px 13px;border-radius:8px;cursor:pointer;border:none;background:none;transition:all 0.2s;font-family:'Outfit',sans-serif;}
+.nav-link:hover{background:var(--surface);color:var(--text);}
+
+/* HERO */
+.hero{max-width:1140px;margin:0 auto;padding:52px 40px 32px;display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,54px);font-weight:900;line-height:1.06;margin-bottom:14px;letter-spacing:-1px;}
+.hero h1 em{color:var(--accent);font-style:normal;position:relative;}
+.hero h1 em::after{content:'';position:absolute;bottom:1px;left:0;right:0;height:3px;background:var(--accent2);border-radius:2px;opacity:0.35;}
+.hero-sub{color:var(--muted);font-size:15px;line-height:1.7;margin-bottom:22px;}
+.hero-pills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:20px;}
+.pill{font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;border:1px solid var(--border);}
+.pill.g{background:rgba(27,94,59,0.08);color:var(--accent);border-color:rgba(27,94,59,0.2);}
+.pill.b{background:rgba(26,79,160,0.08);color:var(--blue);border-color:rgba(26,79,160,0.2);}
+.pill.o{background:rgba(200,146,10,0.08);color:var(--gold);border-color:rgba(200,146,10,0.2);}
+.seo-keywords{font-size:11px;color:var(--muted);line-height:1.8;}
+.seo-keywords strong{color:var(--text);}
+
+.hero-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;}
+.hc{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 12px;cursor:pointer;transition:all 0.22s;box-shadow:var(--shadow);text-align:center;}
+.hc:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);}
+.hc-ico{font-size:24px;margin-bottom:6px;}
+.hc-title{font-weight:700;font-size:12px;margin-bottom:2px;}
+.hc-sub{font-size:10px;color:var(--muted);}
+.hc-badge{display:inline-block;margin-top:5px;font-family:'JetBrains Mono',monospace;font-size:9px;padding:2px 7px;border-radius:4px;}
+.bg{background:rgba(27,94,59,0.1);color:var(--accent);}
+.bb{background:rgba(26,79,160,0.1);color:var(--blue);}
+.bo{background:rgba(200,146,10,0.1);color:var(--gold);}
+.br{background:rgba(193,68,14,0.1);color:var(--red);}
+.bp{background:rgba(107,63,160,0.1);color:var(--purple);}
+
+/* MAIN */
+.main-wrap{max-width:1140px;margin:0 auto;padding:0 40px 80px;display:grid;grid-template-columns:1fr 268px;gap:28px;align-items:start;}
+
+/* TABS */
+.tab-bar{display:flex;gap:3px;margin-bottom:22px;background:var(--surface);padding:5px;border-radius:14px;border:1px solid var(--border);box-shadow:var(--shadow);flex-wrap:wrap;}
+.tab{flex:1;min-width:80px;padding:8px 8px;border-radius:9px;font-size:11px;font-weight:600;cursor:pointer;border:none;background:none;transition:all 0.2s;font-family:'Outfit',sans-serif;color:var(--muted);display:flex;align-items:center;justify-content:center;gap:4px;text-align:center;}
+.tab.active{background:var(--text);color:#f4f2ed;box-shadow:0 2px 8px rgba(0,0,0,0.15);}
+.tab:not(.active):hover{background:var(--bg);color:var(--text);}
+
+/* FORMS */
+.form-panel{display:none;}
+.form-panel.active{display:block;animation:fadeUp 0.28s ease;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+.form-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:var(--shadow);margin-bottom:12px;}
+.fst{font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:2px;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.fg.three{grid-template-columns:1fr 1fr 1fr;}
+.fg.full{grid-template-columns:1fr;}
+.f{display:flex;flex-direction:column;gap:4px;}
+.f.s2{grid-column:span 2;}
+.f.s3{grid-column:span 3;}
+.f label{font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.8px;font-family:'JetBrains Mono',monospace;}
+.f input,.f select,.f textarea{background:var(--bg);border:1.5px solid var(--border);color:var(--text);padding:8px 11px;border-radius:9px;font-size:13px;font-family:'Outfit',sans-serif;outline:none;transition:border 0.2s;width:100%;}
+.f input:focus,.f select:focus,.f textarea:focus{border-color:var(--accent);background:#fff;}
+.f textarea{resize:vertical;min-height:75px;}
+.net-box{margin-top:12px;background:var(--bg);border-radius:9px;padding:11px 14px;display:flex;justify-content:space-between;align-items:center;border:1px solid var(--border);}
+
+/* UPLOAD */
+.uz{border:2px dashed var(--border);border-radius:9px;padding:13px;text-align:center;cursor:pointer;transition:all 0.2s;background:var(--bg);position:relative;}
+.uz:hover{border-color:var(--accent);background:rgba(27,94,59,0.03);}
+.uz input{display:none;}
+.uz .uzi{font-size:20px;margin-bottom:4px;}
+.uz p{font-size:11px;color:var(--muted);}
+.uz strong{font-size:12px;color:var(--text);display:block;margin-bottom:1px;}
+.up{max-height:52px;max-width:100%;border-radius:5px;object-fit:contain;display:none;margin:4px auto 0;}
+.up.vis{display:block;}
+.ru{position:absolute;top:4px;right:6px;background:rgba(193,68,14,0.1);border:none;color:var(--red);cursor:pointer;font-size:12px;display:none;width:20px;height:20px;border-radius:50%;line-height:20px;}
+.ru.vis{display:block;}
+
+/* GRATUITY */
+.calc-box{background:linear-gradient(135deg,rgba(27,94,59,0.06),rgba(27,94,59,0.02));border:1px solid rgba(27,94,59,0.2);border-radius:12px;padding:16px;margin-top:12px;}
+.calc-result{display:flex;justify-content:space-between;align-items:center;}
+.calc-result .label{font-size:12px;color:var(--muted);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:0.8px;}
+.calc-result .amount{font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:700;color:var(--accent);}
+.calc-breakdown{margin-top:10px;font-size:12px;color:var(--muted);line-height:1.8;border-top:1px solid rgba(27,94,59,0.15);padding-top:10px;}
+
+/* GEN BTN */
+.gen-btn{width:100%;padding:14px;background:var(--accent);color:#fff;border:none;border-radius:11px;font-size:15px;font-weight:700;font-family:'Outfit',sans-serif;cursor:pointer;transition:all 0.22s;display:flex;align-items:center;justify-content:center;gap:9px;box-shadow:0 5px 20px rgba(27,94,59,0.28);margin-top:4px;}
+.gen-btn:hover{background:#134a2d;transform:translateY(-2px);}
+.gen-btn:active{transform:scale(0.98);}
+
+/* SIDEBAR */
+.sidebar{position:sticky;top:88px;}
+.ad-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);margin-bottom:12px;}
+.ad-card-lbl{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);padding:5px 12px;border-bottom:1px solid var(--border);text-align:center;letter-spacing:1px;}
+.ad-slot{padding:12px;}
+.adp{width:100%;background:var(--bg);border-radius:9px;border:1.5px dashed var(--border);padding:16px 10px;text-align:center;}
+.adp .ai{font-size:20px;margin-bottom:4px;}
+.adp p{font-size:10px;color:var(--muted);}
+.adp strong{font-size:11px;color:var(--text);display:block;margin-bottom:3px;}
+.si{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px;box-shadow:var(--shadow);}
+.si h3{font-family:'Playfair Display',serif;font-size:14px;margin-bottom:10px;}
+.ii{display:flex;gap:8px;margin-bottom:8px;font-size:12px;color:var(--muted);align-items:flex-start;}
+.ii .ic{font-size:13px;flex-shrink:0;margin-top:1px;}
+
+/* MODAL */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(26,24,20,0.72);z-index:200;align-items:center;justify-content:center;backdrop-filter:blur(6px);padding:16px;}
+.modal-overlay.open{display:flex;}
+.modal{background:var(--surface);border-radius:18px;width:100%;max-width:720px;max-height:92vh;overflow-y:auto;box-shadow:0 24px 80px rgba(0,0,0,0.2);animation:mIn 0.28s cubic-bezier(0.34,1.56,0.64,1);}
+@keyframes mIn{from{opacity:0;transform:scale(0.93) translateY(18px);}to{opacity:1;transform:scale(1) translateY(0);}}
+.mh{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--surface);z-index:1;border-radius:18px 18px 0 0;}
+.mh h2{font-family:'Playfair Display',serif;font-size:18px;}
+.mc{background:var(--bg);border:1px solid var(--border);width:28px;height:28px;border-radius:7px;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;}
+.mc:hover{background:#ffe0d8;}
+.mb{padding:20px 24px;}
+.ma{display:flex;gap:10px;margin-top:16px;}
+.btn-dl{flex:1;background:var(--accent);color:#fff;border:none;padding:12px;border-radius:9px;font-size:14px;font-weight:700;cursor:pointer;font-family:'Outfit',sans-serif;}
+.btn-dl:hover{background:#134a2d;}
+.btn-cl{background:none;border:1px solid var(--border);color:var(--muted);padding:12px 16px;border-radius:9px;font-size:13px;cursor:pointer;font-family:'Outfit',sans-serif;}
+.btn-cl:hover{border-color:var(--red);color:var(--red);}
+
+/* DOC */
+.doc-preview{background:#fff;border:1px solid #ddd;border-radius:7px;overflow:hidden;box-shadow:0 3px 16px rgba(0,0,0,0.07);}
+.doc-lh{width:100%;display:block;max-height:110px;object-fit:contain;object-position:center;}
+.doc-fh{width:100%;display:block;max-height:80px;object-fit:contain;object-position:center;}
+.doc-in{padding:28px 36px;}
+.doc-hbar{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;padding-bottom:14px;border-bottom:2px solid;}
+.doc-co{font-size:18px;font-weight:800;margin-bottom:3px;}
+.doc-cs{font-size:11px;color:#888;line-height:1.5;}
+.doc-tb{text-align:right;}
+.doc-ty{font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:2px;}
+.doc-num{font-family:'JetBrains Mono',monospace;font-size:11px;color:#888;margin-top:3px;}
+.doc-mg{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px;}
+.doc-mb h4{font-size:10px;color:#999;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;font-family:'JetBrains Mono',monospace;}
+.doc-mb p{font-size:13px;line-height:1.6;}
+.doc-tbl{width:100%;border-collapse:collapse;margin-bottom:12px;}
+.doc-tbl th{padding:8px 10px;text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:0.8px;font-weight:700;color:#fff;}
+.doc-tbl td{padding:8px 10px;font-size:12px;border-bottom:1px solid #f0f0f0;}
+.doc-tbl tr:last-child td{border-bottom:none;}
+.doc-tot{display:flex;justify-content:flex-end;margin-top:6px;}
+.doc-totbox{border-radius:9px;padding:12px 18px;min-width:180px;}
+.doc-totbox .lbl{font-size:10px;color:#888;margin-bottom:2px;}
+.doc-totbox .amt{font-size:20px;font-weight:800;font-family:'JetBrains Mono',monospace;}
+.doc-sig{display:flex;justify-content:flex-start;margin-top:24px;padding-top:14px;border-top:1px solid #eee;gap:40px;}
+.doc-sigb{text-align:left;}
+.doc-sigi{max-height:50px;max-width:140px;object-fit:contain;display:block;margin-bottom:3px;}
+.doc-sigl{border-bottom:1px solid #444;width:160px;margin-bottom:5px;}
+.doc-sign{font-size:13px;font-weight:700;color:#1a1814;margin-bottom:1px;}
+.doc-sigd{font-size:11px;color:#666;}
+.doc-ft{padding:8px 36px 10px;font-size:10px;color:#ccc;text-align:center;border-top:1px solid #f5f5f5;}
+
+/* DONATION */
+.don-section{max-width:1140px;margin:0 auto 44px;padding:0 40px;}
+.don-card{background:linear-gradient(135deg,#111 0%,#1e2a1e 60%,#1a1a2e 100%);border-radius:20px;padding:36px;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;position:relative;overflow:hidden;box-shadow:0 14px 56px rgba(0,0,0,0.18);}
+.don-card::before{content:'';position:absolute;top:-50px;right:-50px;width:220px;height:220px;background:radial-gradient(circle,rgba(27,94,59,0.18) 0%,transparent 70%);pointer-events:none;}
+.don-left{position:relative;z-index:1;}
+.don-tag{display:inline-flex;align-items:center;gap:5px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#2ecc71;background:rgba(46,204,113,0.1);border:1px solid rgba(46,204,113,0.22);padding:4px 11px;border-radius:20px;margin-bottom:12px;}
+.don-title{font-family:'Playfair Display',serif;font-size:26px;font-weight:900;color:#f4f2ed;line-height:1.2;margin-bottom:9px;}
+.don-title span{color:#2ecc71;}
+.don-desc{font-size:13px;color:#888;line-height:1.6;max-width:440px;margin-bottom:18px;}
+.don-amts{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;}
+.don-amt{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:#f4f2ed;padding:7px 16px;border-radius:7px;font-size:12px;font-weight:600;cursor:pointer;transition:all 0.2s;font-family:'Outfit',sans-serif;}
+.don-amt:hover,.don-amt.sel{background:var(--accent);border-color:var(--accent);color:#fff;}
+.don-custom{display:flex;gap:7px;align-items:center;margin-top:8px;}
+.don-custom input{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.13);color:#f4f2ed;padding:8px 12px;border-radius:7px;font-size:12px;font-family:'Outfit',sans-serif;outline:none;width:110px;}
+.don-custom input:focus{border-color:#2ecc71;}
+.don-right{display:flex;flex-direction:column;gap:10px;position:relative;z-index:1;min-width:170px;}
+.don-btn{display:flex;align-items:center;justify-content:center;gap:7px;padding:12px 18px;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;border:none;font-family:'Outfit',sans-serif;transition:all 0.22s;text-decoration:none;text-align:center;}
+.don-pp{background:#0070ba;color:#fff;}
+.don-pp:hover{background:#005ea6;transform:translateY(-2px);}
+.don-cf{background:linear-gradient(135deg,var(--gold),#e8900a);color:#fff;}
+.don-cf:hover{transform:translateY(-2px);}
+.don-cr{background:rgba(255,255,255,0.07);color:#f4f2ed;border:1px solid rgba(255,255,255,0.14);}
+.don-cr:hover{background:rgba(255,255,255,0.12);}
+
+/* AD BOTTOM */
+.ad-bot{max-width:1140px;margin:0 auto 28px;padding:0 40px;}
+.ad-bot-in{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px;display:flex;align-items:center;gap:14px;box-shadow:var(--shadow);}
+.ad-bot-slot{flex:1;background:var(--bg);border:1.5px dashed var(--border);border-radius:8px;padding:11px 24px;color:var(--muted);font-size:12px;text-align:center;}
+
+/* FOOTER */
+footer{background:var(--text);color:#f4f2ed;padding:28px 40px;text-align:center;}
+.fi{max-width:1140px;margin:0 auto;}
+.fl{font-family:'Playfair Display',serif;font-size:20px;font-weight:900;margin-bottom:6px;}
+.fs{font-size:12px;color:#777;margin-bottom:16px;}
+.flinks{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;}
+.flinks a{color:#777;font-size:12px;text-decoration:none;}
+.flinks a:hover{color:var(--accent2);}
+
+/* TOAST */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--text);color:#f4f2ed;padding:11px 22px;border-radius:40px;font-size:13px;font-weight:500;z-index:300;transition:transform 0.4s cubic-bezier(0.34,1.56,0.64,1);white-space:nowrap;box-shadow:0 7px 28px rgba(0,0,0,0.2);}
+.toast.show{transform:translateX(-50%) translateY(0);}
+
+@media(max-width:768px){
+  header,footer{padding:0 16px;}
+  footer{padding:24px 16px;}
+  .hero{grid-template-columns:1fr;padding:28px 16px 20px;gap:22px;}
+  .hero-cards{grid-template-columns:1fr 1fr 1fr;}
+  .main-wrap{grid-template-columns:1fr;padding:0 16px 60px;}
+  .sidebar,.ad-bot,.don-section{padding:0 16px;}
+  .sidebar{display:none;}
+  .fg,.fg.three{grid-template-columns:1fr;}
+  .f.s2,.f.s3{grid-column:span 1;}
+  .tab{font-size:10px;padding:7px 5px;}
+  .don-card{grid-template-columns:1fr;padding:24px 18px;}
+  .don-right{flex-direction:row;flex-wrap:wrap;}
+  .don-btn{flex:1;min-width:110px;}
+}
+</style>
+</head>
+<body>
+
+<div class="ad-banner">
+  <span class="ad-lbl">AD</span>
+  <span>Create a professional website in minutes — <strong>Try our website builder free today</strong></span>
+  <span class="ad-lbl">SPONSORED</span>
+</div>
+
+<header>
+  <div class="nav-inner">
+    <div class="logo">
+      <div class="logo-icon">📋</div>
+      Dox<em>ify</em>
+      <span class="logo-tag">FREE</span>
+    </div>
+    <div class="nav-links">
+      <button class="nav-link" onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'})">🛠 Tools</button>
+      <button class="nav-link" onclick="document.getElementById('feedback').scrollIntoView({behavior:'smooth'})">💬 Feedback</button>
+      <button class="nav-link" onclick="document.getElementById('donate').scrollIntoView({behavior:'smooth'})">❤️ Support</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <div class="hero-pills">
+      <span class="pill g">✓ 100% Free</span>
+      <span class="pill b">✓ No Login</span>
+      <span class="pill o">✓ Clean PDF</span>
+    </div>
+    <h1>Professional Documents<br/>for <em>Everyone, Worldwide</em></h1>
+    <p class="hero-sub">Generate salary slips, NOC letters, experience letters, visa cover letters, freelance contracts and bank statement letters instantly — with your company letterhead. Used globally. No watermark ever.</p>
+    <div class="seo-keywords">
+      <strong>Most searched:</strong> free salary certificate · NOC letter generator · experience letter · visa cover letter · freelance contract · bank statement letter
+    </div>
+  </div>
+  <div class="hero-cards">
+    <div class="hc" onclick="sw('salary')"><div class="hc-ico">💼</div><div class="hc-title">Salary Slip</div><div class="hc-sub">Full payslip</div><span class="hc-badge bg">PAYSLIP</span></div>
+    <div class="hc" onclick="sw('cert')"><div class="hc-ico">📜</div><div class="hc-title">Salary Cert</div><div class="hc-sub">Official letter</div><span class="hc-badge bb">CERT</span></div>
+    <div class="hc" onclick="sw('noc')"><div class="hc-ico">✅</div><div class="hc-title">NOC Letter</div><div class="hc-sub">No objection</div><span class="hc-badge bo">NOC</span></div>
+    <div class="hc" onclick="sw('exp')"><div class="hc-ico">🏅</div><div class="hc-title">Experience Letter</div><div class="hc-sub">Employment proof</div><span class="hc-badge br">EXP</span></div>
+    <div class="hc" onclick="sw('visa')"><div class="hc-ico">✈️</div><div class="hc-title">Visa Cover Letter</div><div class="hc-sub">Embassy ready</div><span class="hc-badge bp">VISA</span></div>
+    <div class="hc" onclick="sw('free')"><div class="hc-ico">🤝</div><div class="hc-title">Freelance Contract</div><div class="hc-sub">Client agreement</div><span class="hc-badge bo">CONTRACT</span></div>
+    <div class="hc" onclick="sw('bank')"><div class="hc-ico">🏦</div><div class="hc-title">Bank Letter</div><div class="hc-sub">Statement explanation</div><span class="hc-badge bg">BANK</span></div>
+  </div>
+</section>
+
+<div class="main-wrap" id="tools">
+  <div>
+    <!-- SHARED LETTERHEAD CARD -->
+    <div class="form-card">
+      <div class="fst">🖼️ Letterhead & Signature — applies to all documents (optional)</div>
+      <div class="fg">
+        <div class="f"><label>Header / Letterhead Logo</label>
+          <div class="uz" onclick="document.getElementById('lhIn').click()">
+            <input type="file" id="lhIn" accept="image/*" onchange="pu(this,'lhPrev','lhRm','lhData')"/>
+            <div class="uzi">🏢</div><strong>Upload Header</strong><p>PNG/JPG — top of document</p>
+            <img id="lhPrev" class="up"/><button class="ru" id="lhRm" onclick="ru(event,'lhIn','lhPrev','lhRm','lhData')">✕</button>
+          </div>
+        </div>
+        <div class="f"><label>Footer Logo</label>
+          <div class="uz" onclick="document.getElementById('fhIn').click()">
+            <input type="file" id="fhIn" accept="image/*" onchange="pu(this,'fhPrev','fhRm','fhData')"/>
+            <div class="uzi">📄</div><strong>Upload Footer</strong><p>PNG/JPG — bottom of document</p>
+            <img id="fhPrev" class="up"/><button class="ru" id="fhRm" onclick="ru(event,'fhIn','fhPrev','fhRm','fhData')">✕</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB BAR -->
+    <div class="tab-bar">
+      <button class="tab active" id="tab-salary" onclick="sw('salary')">💼 Salary Slip</button>
+      <button class="tab" id="tab-cert" onclick="sw('cert')">📜 Salary Cert</button>
+      <button class="tab" id="tab-noc" onclick="sw('noc')">✅ NOC Letter</button>
+      <button class="tab" id="tab-exp" onclick="sw('exp')">🏅 Experience</button>
+      <button class="tab" id="tab-visa" onclick="sw('visa')">✈️ Visa Letter</button>
+      <button class="tab" id="tab-free" onclick="sw('free')">🤝 Freelance</button>
+      <button class="tab" id="tab-bank" onclick="sw('bank')">🏦 Bank Letter</button>
+    </div>
+
+    <!-- ===== SALARY SLIP ===== -->
+    <div class="form-panel active" id="panel-salary">
+      <div class="form-card">
+        <div class="fst">🏢 Company Details</div>
+        <div class="fg">
+          <div class="f s2"><label>Company Name</label><input type="text" id="s-co" placeholder="Gulf Trading LLC"/></div>
+          <div class="f"><label>Address</label><input type="text" id="s-ca" placeholder="Dubai, UAE"/></div>
+          <div class="f"><label>Phone</label><input type="text" id="s-cp" placeholder="+971 50 000 0000"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">👤 Employee</div>
+        <div class="fg">
+          <div class="f"><label>Full Name</label><input type="text" id="s-en" placeholder="Mohammed Al Rashid"/></div>
+          <div class="f"><label>Employee ID</label><input type="text" id="s-eid" placeholder="EMP-001"/></div>
+          <div class="f"><label>Designation</label><input type="text" id="s-des" placeholder="Sales Manager"/></div>
+          <div class="f"><label>Department</label><input type="text" id="s-dep" placeholder="Operations"/></div>
+          <div class="f"><label>Pay Period</label><input type="month" id="s-per"/></div>
+          <div class="f"><label>Date of Joining</label><input type="date" id="s-doj"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">💰 Salary</div>
+        <div class="fg three">
+          <div class="f"><label>Basic Salary</label><input type="number" id="s-bas" placeholder="5000" oninput="calcSal()"/></div>
+          <div class="f"><label>Housing Allowance</label><input type="number" id="s-hra" placeholder="1500" oninput="calcSal()"/></div>
+          <div class="f"><label>Transport Allow.</label><input type="number" id="s-tra" placeholder="500" oninput="calcSal()"/></div>
+          <div class="f"><label>Other Allowance</label><input type="number" id="s-oth" placeholder="0" oninput="calcSal()"/></div>
+          <div class="f"><label>Overtime</label><input type="number" id="s-ovt" placeholder="0" oninput="calcSal()"/></div>
+          <div class="f"><label>Deductions</label><input type="number" id="s-ded" placeholder="0" oninput="calcSal()"/></div>
+        </div>
+        <div class="net-box"><span style="font-weight:600;color:var(--muted);">NET SALARY</span><span id="s-net" style="font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:var(--accent);">0.00</span></div>
+      </div>
+      <div class="form-card">
+        <div class="fst">✍️ Signatures & Options</div>
+        <div class="fg">
+          <div class="f"><label>Currency</label><select id="s-cur"><option>AED</option><option>USD</option><option>GBP</option><option>EUR</option><option>INR</option><option>PKR</option><option>SAR</option></select></div>
+          <div class="f"><label>Payment Method</label><select id="s-pay"><option>Bank Transfer</option><option>Cash</option><option>Cheque</option></select></div>
+          <div class="f"><label>Employee Signature</label>
+            <div class="uz" onclick="document.getElementById('s-esIn').click()">
+              <input type="file" id="s-esIn" accept="image/*" onchange="pu(this,'s-esPrev','s-esRm','empSig')"/>
+              <div class="uzi">✍️</div><strong>Employee Sig</strong><p>PNG transparent</p>
+              <img id="s-esPrev" class="up"/><button class="ru" id="s-esRm" onclick="ru(event,'s-esIn','s-esPrev','s-esRm','empSig')">✕</button>
+            </div>
+          </div>
+          <div class="f"><label>Authorized Signature</label>
+            <div class="uz" onclick="document.getElementById('s-asIn').click()">
+              <input type="file" id="s-asIn" accept="image/*" onchange="pu(this,'s-asPrev','s-asRm','salAuthSig')"/>
+              <div class="uzi">🖊️</div><strong>Authorized Sig</strong><p>PNG transparent</p>
+              <img id="s-asPrev" class="up"/><button class="ru" id="s-asRm" onclick="ru(event,'s-asIn','s-asPrev','s-asRm','salAuthSig')">✕</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="gen-btn" onclick="gen('salary')">📄 Generate Salary Slip</button>
+    </div>
+
+    <!-- ===== SALARY CERTIFICATE ===== -->
+    <div class="form-panel" id="panel-cert">
+      <div class="form-card">
+        <div class="fst">🏢 Company</div>
+        <div class="fg">
+          <div class="f s2"><label>Company Name</label><input type="text" id="c-co" placeholder="Gulf Trading LLC"/></div>
+          <div class="f"><label>Address</label><input type="text" id="c-ca" placeholder="Dubai, UAE"/></div>
+          <div class="f"><label>Phone / Email</label><input type="text" id="c-cp" placeholder="+971 50 000 0000"/></div>
+          <div class="f"><label>HR / Signatory Name</label><input type="text" id="c-hrn" placeholder="HR Manager Name"/></div>
+          <div class="f"><label>Signatory Designation</label><input type="text" id="c-hrd" placeholder="HR Manager"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">👤 Employee</div>
+        <div class="fg">
+          <div class="f"><label>Full Name</label><input type="text" id="c-en" placeholder="Mohammed Al Rashid"/></div>
+          <div class="f"><label>Designation</label><input type="text" id="c-des" placeholder="Senior Accountant"/></div>
+          <div class="f"><label>Department</label><input type="text" id="c-dep" placeholder="Finance"/></div>
+          <div class="f"><label>Employee ID</label><input type="text" id="c-eid" placeholder="EMP-001"/></div>
+          <div class="f"><label>Date of Joining</label><input type="date" id="c-doj"/></div>
+          <div class="f"><label>Certificate Date</label><input type="date" id="c-dt"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">🪪 Identity Documents</div>
+        <div class="fg">
+          <div class="f"><label>Emirates / National ID</label><input type="text" id="c-eid2" placeholder="784-XXXX-XXXXXXX-X"/></div>
+          <div class="f"><label>ID Expiry Date</label><input type="date" id="c-eidx"/></div>
+          <div class="f"><label>Passport Number</label><input type="text" id="c-pp" placeholder="A12345678"/></div>
+          <div class="f"><label>Passport Expiry</label><input type="date" id="c-ppx"/></div>
+          <div class="f"><label>Nationality</label><input type="text" id="c-nat" placeholder="Pakistani"/></div>
+          <div class="f"><label>Visa / Residency Status</label><input type="text" id="c-vis" placeholder="UAE Resident Work Visa"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">💰 Salary & Purpose</div>
+        <div class="fg">
+          <div class="f"><label>Monthly Salary</label><input type="number" id="c-sal" placeholder="8000"/></div>
+          <div class="f"><label>Currency</label><select id="c-cur"><option>AED</option><option>USD</option><option>GBP</option><option>EUR</option><option>INR</option><option>PKR</option><option>SAR</option></select></div>
+          <div class="f s2"><label>Certificate Purpose</label><input type="text" id="c-pur" placeholder="visa application, bank loan, tenancy agreement"/></div>
+          <div class="f"><label>Certificate Number</label><input type="text" id="c-cno" placeholder="CERT-001"/></div>
+          <div class="f"><label>Reference Number</label><input type="text" id="c-ref" placeholder="Optional"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">✍️ Authorized Signature</div>
+        <div class="uz" style="max-width:220px;" onclick="document.getElementById('c-asIn').click()">
+          <input type="file" id="c-asIn" accept="image/*" onchange="pu(this,'c-asPrev','c-asRm','certAuthSig')"/>
+          <div class="uzi">🖊️</div><strong>Authorized Sig</strong><p>PNG transparent</p>
+          <img id="c-asPrev" class="up"/><button class="ru" id="c-asRm" onclick="ru(event,'c-asIn','c-asPrev','c-asRm','certAuthSig')">✕</button>
+        </div>
+      </div>
+      <button class="gen-btn" onclick="gen('cert')">📜 Generate Salary Certificate</button>
+    </div>
+
+    <!-- ===== NOC LETTER ===== -->
+    <div class="form-panel" id="panel-noc">
+      <div class="form-card">
+        <div class="fst">🏢 Company</div>
+        <div class="fg">
+          <div class="f s2"><label>Company Name</label><input type="text" id="n-co" placeholder="Gulf Trading LLC"/></div>
+          <div class="f"><label>Address</label><input type="text" id="n-ca" placeholder="Dubai, UAE"/></div>
+          <div class="f"><label>Phone / Email</label><input type="text" id="n-cp" placeholder="+971 50 000 0000"/></div>
+          <div class="f"><label>Issuing Authority Name</label><input type="text" id="n-auth" placeholder="HR Manager / PRO Name"/></div>
+          <div class="f"><label>Designation</label><input type="text" id="n-authd" placeholder="HR Manager"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">👤 Employee / Applicant</div>
+        <div class="fg">
+          <div class="f"><label>Full Name</label><input type="text" id="n-en" placeholder="Mohammed Al Rashid"/></div>
+          <div class="f"><label>Designation</label><input type="text" id="n-des" placeholder="Accountant"/></div>
+          <div class="f"><label>Emirates ID / Passport No.</label><input type="text" id="n-id" placeholder="784-XXXX-XXXXXXX-X"/></div>
+          <div class="f"><label>Nationality</label><input type="text" id="n-nat" placeholder="Pakistani"/></div>
+          <div class="f"><label>NOC Date</label><input type="date" id="n-dt"/></div>
+          <div class="f"><label>NOC Number</label><input type="text" id="n-no" placeholder="NOC-001"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">📋 NOC Purpose</div>
+        <div class="fg full">
+          <div class="f"><label>Purpose of NOC</label><input type="text" id="n-pur" placeholder="e.g. to obtain a driving licence / open a bank account / travel abroad / change employment"/></div>
+          <div class="f"><label>Additional Notes (Optional)</label><textarea id="n-note" placeholder="Any additional remarks or conditions..."></textarea></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">✍️ Authorized Signature</div>
+        <div class="uz" style="max-width:220px;" onclick="document.getElementById('n-asIn').click()">
+          <input type="file" id="n-asIn" accept="image/*" onchange="pu(this,'n-asPrev','n-asRm','nocAuthSig')"/>
+          <div class="uzi">🖊️</div><strong>Authorized Sig</strong><p>PNG transparent</p>
+          <img id="n-asPrev" class="up"/><button class="ru" id="n-asRm" onclick="ru(event,'n-asIn','n-asPrev','n-asRm','nocAuthSig')">✕</button>
+        </div>
+      </div>
+      <button class="gen-btn" onclick="gen('noc')">✅ Generate NOC Letter</button>
+    </div>
+
+    <!-- ===== EXPERIENCE LETTER ===== -->
+    <div class="form-panel" id="panel-exp">
+      <div class="form-card">
+        <div class="fst">🏢 Company</div>
+        <div class="fg">
+          <div class="f s2"><label>Company Name</label><input type="text" id="e-co" placeholder="Gulf Trading LLC"/></div>
+          <div class="f"><label>Address</label><input type="text" id="e-ca" placeholder="Dubai, UAE"/></div>
+          <div class="f"><label>Phone / Email</label><input type="text" id="e-cp" placeholder="+971 50 000 0000"/></div>
+          <div class="f"><label>Issuing Authority Name</label><input type="text" id="e-auth" placeholder="HR Manager"/></div>
+          <div class="f"><label>Designation</label><input type="text" id="e-authd" placeholder="HR Manager"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">👤 Employee</div>
+        <div class="fg">
+          <div class="f"><label>Full Name</label><input type="text" id="e-en" placeholder="Mohammed Al Rashid"/></div>
+          <div class="f"><label>Designation / Last Position</label><input type="text" id="e-des" placeholder="Senior Accountant"/></div>
+          <div class="f"><label>Department</label><input type="text" id="e-dep" placeholder="Finance"/></div>
+          <div class="f"><label>Employee ID</label><input type="text" id="e-eid" placeholder="EMP-001"/></div>
+          <div class="f"><label>Date of Joining</label><input type="date" id="e-doj"/></div>
+          <div class="f"><label>Last Working Date</label><input type="date" id="e-lwd"/></div>
+          <div class="f"><label>Letter Date</label><input type="date" id="e-dt"/></div>
+          <div class="f"><label>Letter Number</label><input type="text" id="e-no" placeholder="EXP-001"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">📋 Performance Note (Optional)</div>
+        <div class="fg full">
+          <div class="f"><label>Performance / Conduct Remarks</label><textarea id="e-perf" placeholder="e.g. The employee has been hardworking, sincere and dedicated throughout their tenure..."></textarea></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">✍️ Authorized Signature</div>
+        <div class="uz" style="max-width:220px;" onclick="document.getElementById('e-asIn').click()">
+          <input type="file" id="e-asIn" accept="image/*" onchange="pu(this,'e-asPrev','e-asRm','expAuthSig')"/>
+          <div class="uzi">🖊️</div><strong>Authorized Sig</strong><p>PNG transparent</p>
+          <img id="e-asPrev" class="up"/><button class="ru" id="e-asRm" onclick="ru(event,'e-asIn','e-asPrev','e-asRm','expAuthSig')">✕</button>
+        </div>
+      </div>
+      <button class="gen-btn" onclick="gen('exp')">🏅 Generate Experience Letter</button>
+    </div>
+
+    <!-- ===== VISA COVER LETTER ===== -->
+    <div class="form-panel" id="panel-visa">
+      <div class="form-card">
+        <div class="fst">👤 Applicant Details</div>
+        <div class="fg">
+          <div class="f"><label>Full Name</label><input type="text" id="v-name" placeholder="Mohammed Al Rashid"/></div>
+          <div class="f"><label>Passport Number</label><input type="text" id="v-pp" placeholder="A12345678"/></div>
+          <div class="f"><label>Nationality</label><input type="text" id="v-nat" placeholder="Pakistani"/></div>
+          <div class="f"><label>Date of Birth</label><input type="date" id="v-dob"/></div>
+          <div class="f"><label>Current Address</label><input type="text" id="v-addr" placeholder="Dubai, UAE"/></div>
+          <div class="f"><label>Phone / Email</label><input type="text" id="v-contact" placeholder="+971 50 000 0000"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">✈️ Visa Details</div>
+        <div class="fg">
+          <div class="f"><label>Visa Type</label><select id="v-type"><option>Tourist Visa</option><option>Schengen Visa</option><option>UK Visa</option><option>Canada Visa</option><option>Australia Visa</option><option>Student Visa</option><option>Business Visa</option><option>Family Visit Visa</option></select></div>
+          <div class="f"><label>Embassy / Consulate</label><input type="text" id="v-emb" placeholder="Embassy of Germany, Abu Dhabi"/></div>
+          <div class="f"><label>Destination Country</label><input type="text" id="v-dest" placeholder="Germany"/></div>
+          <div class="f"><label>Travel Purpose</label><input type="text" id="v-purp" placeholder="Tourism / Business Meeting / Family Visit"/></div>
+          <div class="f"><label>Intended Travel Date</label><input type="date" id="v-tdate"/></div>
+          <div class="f"><label>Duration of Stay</label><input type="text" id="v-dur" placeholder="14 days"/></div>
+          <div class="f"><label>Letter Date</label><input type="date" id="v-dt"/></div>
+          <div class="f"><label>Accommodation</label><input type="text" id="v-acc" placeholder="Hotel Marriott / Friend's address"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">💼 Employment (Optional — strengthens visa)</div>
+        <div class="fg">
+          <div class="f"><label>Employer Name</label><input type="text" id="v-emp" placeholder="Gulf Trading LLC"/></div>
+          <div class="f"><label>Job Title</label><input type="text" id="v-job" placeholder="Sales Manager"/></div>
+          <div class="f"><label>Monthly Salary</label><input type="text" id="v-sal" placeholder="AED 12,000"/></div>
+          <div class="f"><label>Approved Leave From</label><input type="date" id="v-lv1"/></div>
+        </div>
+      </div>
+      <button class="gen-btn" onclick="gen('visa')">✈️ Generate Visa Cover Letter</button>
+    </div>
+
+    <!-- ===== GRATUITY ===== -->
+    <!-- ===== FREELANCE CONTRACT ===== -->
+    <div class="form-panel" id="panel-free">
+      <div class="form-card">
+        <div class="fst">🤝 Freelancer (Service Provider)</div>
+        <div class="fg">
+          <div class="f"><label>Freelancer Full Name</label><input type="text" id="fr-fn" placeholder="John Smith"/></div>
+          <div class="f"><label>Freelancer Title / Skill</label><input type="text" id="fr-ft" placeholder="Graphic Designer / Web Developer"/></div>
+          <div class="f"><label>Address / Location</label><input type="text" id="fr-fa" placeholder="London, UK"/></div>
+          <div class="f"><label>Email</label><input type="text" id="fr-fe" placeholder="john@email.com"/></div>
+          <div class="f"><label>Phone</label><input type="text" id="fr-fp" placeholder="+44 700 000 0000"/></div>
+          <div class="f"><label>ID / Registration No. (Optional)</label><input type="text" id="fr-fid" placeholder="Optional"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">🏢 Client (Hiring Party)</div>
+        <div class="fg">
+          <div class="f"><label>Client Name / Company</label><input type="text" id="fr-cn" placeholder="ABC Tech Ltd."/></div>
+          <div class="f"><label>Client Contact Person</label><input type="text" id="fr-cc" placeholder="Sarah Johnson"/></div>
+          <div class="f"><label>Client Address</label><input type="text" id="fr-ca" placeholder="New York, USA"/></div>
+          <div class="f"><label>Client Email</label><input type="text" id="fr-ce" placeholder="client@company.com"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">📋 Project & Payment</div>
+        <div class="fg">
+          <div class="f s2"><label>Project / Service Description</label><input type="text" id="fr-pd" placeholder="Website design and development for e-commerce platform"/></div>
+          <div class="f"><label>Contract Start Date</label><input type="date" id="fr-sd"/></div>
+          <div class="f"><label>Contract End Date / Deadline</label><input type="date" id="fr-ed"/></div>
+          <div class="f"><label>Total Project Fee</label><input type="number" id="fr-fee" placeholder="2500"/></div>
+          <div class="f"><label>Currency</label><select id="fr-cur"><option>USD</option><option>GBP</option><option>EUR</option><option>AED</option><option>INR</option><option>PKR</option><option>SAR</option><option>CAD</option><option>AUD</option></select></div>
+          <div class="f"><label>Payment Terms</label><select id="fr-pt"><option>50% upfront, 50% on completion</option><option>100% upfront</option><option>100% on completion</option><option>Monthly installments</option><option>Milestone-based payments</option></select></div>
+          <div class="f"><label>Payment Method</label><select id="fr-pm"><option>Bank Transfer</option><option>PayPal</option><option>Wise</option><option>Cheque</option><option>Cash</option></select></div>
+          <div class="f"><label>Contract Number</label><input type="text" id="fr-no" placeholder="CONTRACT-001"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">📝 Deliverables & Revisions</div>
+        <div class="fg full">
+          <div class="f"><label>Key Deliverables</label><textarea id="fr-del" placeholder="1. Homepage design&#10;2. 5 inner pages&#10;3. Mobile responsive layout&#10;4. Source files"></textarea></div>
+          <div class="f"><label>Number of Revisions Included</label><input type="text" id="fr-rev" placeholder="e.g. 3 rounds of revisions"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">✍️ Signatures</div>
+        <div class="fg">
+          <div class="f"><label>Freelancer Signature</label>
+            <div class="uz" onclick="document.getElementById('fr-fsIn').click()">
+              <input type="file" id="fr-fsIn" accept="image/*" onchange="pu(this,'fr-fsPrev','fr-fsRm','frFreeSig')"/>
+              <div class="uzi">✍️</div><strong>Freelancer Sig</strong><p>PNG transparent</p>
+              <img id="fr-fsPrev" class="up"/><button class="ru" id="fr-fsRm" onclick="ru(event,'fr-fsIn','fr-fsPrev','fr-fsRm','frFreeSig')">✕</button>
+            </div>
+          </div>
+          <div class="f"><label>Client Signature</label>
+            <div class="uz" onclick="document.getElementById('fr-csIn').click()">
+              <input type="file" id="fr-csIn" accept="image/*" onchange="pu(this,'fr-csPrev','fr-csRm','frClientSig')"/>
+              <div class="uzi">🖊️</div><strong>Client Sig</strong><p>PNG transparent</p>
+              <img id="fr-csPrev" class="up"/><button class="ru" id="fr-csRm" onclick="ru(event,'fr-csIn','fr-csPrev','fr-csRm','frClientSig')">✕</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="gen-btn" onclick="gen('free')">🤝 Generate Freelance Contract</button>
+    </div>
+
+    <!-- ===== BANK STATEMENT EXPLANATION LETTER ===== -->
+    <div class="form-panel" id="panel-bank">
+      <div class="form-card">
+        <div class="fst">👤 Applicant Details</div>
+        <div class="fg">
+          <div class="f"><label>Full Name</label><input type="text" id="b-name" placeholder="Mohammed Al Rashid"/></div>
+          <div class="f"><label>Account Number (last 4 digits)</label><input type="text" id="b-acc" placeholder="XXXX-1234"/></div>
+          <div class="f"><label>Current Address</label><input type="text" id="b-addr" placeholder="Dubai, UAE"/></div>
+          <div class="f"><label>Phone / Email</label><input type="text" id="b-contact" placeholder="+971 50 000 0000"/></div>
+          <div class="f"><label>Letter Date</label><input type="date" id="b-dt"/></div>
+          <div class="f"><label>Reference / Case Number (Optional)</label><input type="text" id="b-ref" placeholder="Optional — Visa ref, loan ref etc."/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">🏦 Bank & Statement Details</div>
+        <div class="fg">
+          <div class="f"><label>Bank Name</label><input type="text" id="b-bank" placeholder="First Abu Dhabi Bank"/></div>
+          <div class="f"><label>Branch</label><input type="text" id="b-branch" placeholder="Dubai Main Branch"/></div>
+          <div class="f"><label>Statement Period</label><input type="text" id="b-period" placeholder="January 2026 – March 2026"/></div>
+          <div class="f"><label>Letter Addressed To</label><input type="text" id="b-to" placeholder="Visa Officer / Bank Manager / Loan Department"/></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="fst">💬 Explanation Details</div>
+        <div class="fg full">
+          <div class="f"><label>Reason for Explanation (select or type)</label>
+            <select id="b-reason" onchange="setBankReason(this)">
+              <option value="">-- Select a common reason --</option>
+              <option value="visa">Visa Application — to demonstrate sufficient funds</option>
+              <option value="loan">Bank Loan / Mortgage Application</option>
+              <option value="largedep">Large Deposit Explanation</option>
+              <option value="irregular">Irregular Income (Freelance / Self-employed)</option>
+              <option value="gap">Employment Gap / Career Break</option>
+              <option value="custom">Custom / Write My Own</option>
+            </select>
+          </div>
+          <div class="f"><label>Full Explanation (auto-filled or write your own)</label><textarea id="b-explain" style="min-height:100px;" placeholder="Describe the reason for any unusual transactions, income sources, large deposits or withdrawals..."></textarea></div>
+          <div class="f"><label>Source of Funds (Optional)</label><input type="text" id="b-source" placeholder="e.g. Employment salary, freelance income, rental income, savings"/></div>
+        </div>
+      </div>
+      <button class="gen-btn" onclick="gen('bank')">🏦 Generate Bank Explanation Letter</button>
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="ad-card"><div class="ad-card-lbl">ADVERTISEMENT</div><div class="ad-slot"><div class="adp"><div class="ai">📢</div><strong>Advertise Here</strong><p>300×250 — Global professional audience</p></div></div></div>
+    <div class="ad-card"><div class="ad-card-lbl">SPONSORED</div><div class="ad-slot"><div class="adp"><div class="ai">💼</div><strong>Find Freelance Work</strong><p>Join 50M+ freelancers worldwide</p></div></div></div>
+    <div class="si">
+      <h3>Why Doxify?</h3>
+      <div class="ii"><span class="ic">⚡</span><span>Documents ready in 60 seconds</span></div>
+      <div class="ii"><span class="ic">🖼️</span><span>Custom letterhead & footer</span></div>
+      <div class="ii"><span class="ic">✍️</span><span>Digital signature per signer</span></div>
+      <div class="ii"><span class="ic">🔒</span><span>Data never leaves your browser</span></div>
+      <div class="ii"><span class="ic">🖨️</span><span>Clean PDF — zero watermarks</span></div>
+      <div class="ii"><span class="ic">🌍</span><span>Used in 100+ countries worldwide</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="ad-bot">
+  <div class="ad-bot-in">
+    <span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);">AD</span>
+    <div class="ad-bot-slot">📣 728×90 Leaderboard — Advertise to professionals worldwide | Contact us</div>
+  </div>
+</div>
+
+<!-- FEEDBACK / INQUIRY SECTION -->
+<div class="don-section" id="feedback">
+  <div style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:36px;box-shadow:var(--shadow);">
+    <div style="max-width:640px;margin:0 auto;">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+        <div style="width:36px;height:36px;background:var(--accent);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;color:#fff;">💬</div>
+        <div>
+          <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:var(--text);">Share Your Feedback</div>
+          <div style="font-size:13px;color:var(--muted);">Help us improve · Suggest a new tool · Report an issue</div>
+        </div>
+      </div>
+      <div style="height:1px;background:var(--border);margin:20px 0;"></div>
+      <div class="fg" style="margin-bottom:14px;">
+        <div class="f"><label>Your Name</label><input type="text" id="fb-name" placeholder="Your name (optional)"/></div>
+        <div class="f"><label>Email (Optional)</label><input type="text" id="fb-email" placeholder="your@email.com — for reply"/></div>
+      </div>
+      <div class="f" style="margin-bottom:14px;">
+        <label>Type of Feedback</label>
+        <select id="fb-type">
+          <option>💡 Suggest a new document / tool</option>
+          <option>🐛 Report a bug or issue</option>
+          <option>✨ Request an upgrade or improvement</option>
+          <option>⭐ General feedback / compliment</option>
+          <option>🌍 Request support for a new country / language</option>
+          <option>📄 Request a new document type</option>
+        </select>
+      </div>
+      <div class="f" style="margin-bottom:20px;">
+        <label>Your Message</label>
+        <textarea id="fb-msg" style="min-height:110px;" placeholder="Tell us what you'd like to see, what's not working, or what you love about Doxify..."></textarea>
+      </div>
+      <button onclick="submitFeedback()" style="background:var(--accent);color:#fff;border:none;padding:13px 32px;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;font-family:'Outfit',sans-serif;transition:all 0.2s;display:flex;align-items:center;gap:8px;">
+        📨 Send Feedback
+      </button>
+      <div id="fb-success" style="display:none;margin-top:14px;background:rgba(27,94,59,0.08);border:1px solid rgba(27,94,59,0.2);border-radius:9px;padding:12px 16px;font-size:13px;color:var(--accent);">
+        ✅ Thank you! Your feedback has been received. We read every message and will work on it.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DONATION -->
+<div class="don-section" id="donate">
+  <div class="don-card">
+    <div class="don-left">
+      <div class="don-tag">❤️ Support Doxify</div>
+      <div class="don-title">This Tool Is <span>Free</span> for Everyone</div>
+      <div class="don-desc">Doxify is built to help millions of professionals, freelancers, HR teams and individuals worldwide generate professional documents for free. If it saved you time, consider buying me a coffee — it keeps the site running and new tools coming!</div>
+      <div class="don-amts">
+        <button class="don-amt" onclick="selAmt(this,'3')">☕ $3</button>
+        <button class="don-amt sel" onclick="selAmt(this,'5')">🍕 $5</button>
+        <button class="don-amt" onclick="selAmt(this,'10')">🎉 $10</button>
+        <button class="don-amt" onclick="selAmt(this,'25')">🚀 $25</button>
+      </div>
+      <div class="don-custom">
+        <span style="color:#888;font-size:12px;">Custom:</span>
+        <input type="number" id="custAmt" placeholder="Amount" min="1"/>
+        <span style="color:#888;font-size:12px;">USD</span>
+      </div>
+    </div>
+    <div class="don-right">
+      <a class="don-btn don-pp" href="https://paypal.me/abdulw514" target="_blank">💳 Donate via PayPal</a>
+      <a class="don-btn don-cf" href="https://buymeacoffee.com/kaylabfeifer" target="_blank">☕ Buy Me a Coffee</a>
+      <a class="don-btn don-cr" href="#" onclick="document.getElementById('cInfo').style.display=document.getElementById('cInfo').style.display==='none'?'block':'none';return false;">₿ Crypto</a>
+      <div id="cInfo" style="display:none;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:9px;padding:10px;">
+        <p style="font-size:10px;color:#888;font-family:'JetBrains Mono',monospace;margin-bottom:4px;">USDT TRC20</p>
+        <p style="font-size:10px;color:#f4f2ed;word-break:break-all;font-family:'JetBrains Mono',monospace;">TK8MLC5qKqPjjE5oP3BUAkg9EgTzm9w4MD</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="fi">
+    <div class="fl">Doxify.io</div>
+    <div class="fs">Free professional document generator · doxify.io · No login · No watermark · 100% private</div>
+    <div class="flinks">
+      <a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Advertise</a>
+      <a href="#" onclick="document.getElementById('feedback').scrollIntoView({behavior:'smooth'});return false;">💬 Feedback</a>
+      <a href="#" onclick="document.getElementById('donate').scrollIntoView({behavior:'smooth'});return false;">❤️ Donate</a>
+      <a href="#">Contact</a>
+    </div>
+    <p style="margin-top:12px;font-size:11px;color:#444;">© 2026 Doxify.io · Documents for informational purposes only · Not legal advice</p>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="docModal">
+  <div class="modal">
+    <div class="mh"><h2 id="mTitle">Preview</h2><button class="mc" onclick="closeMod()">✕</button></div>
+    <div class="mb">
+      <div id="docContent"></div>
+      <div class="ma">
+        <button class="btn-cl" onclick="closeMod()">✕ Close</button>
+        <button class="btn-dl" onclick="printDoc()">🖨️ Print / Save PDF</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast">✓ Print dialog opened — choose "Save as PDF"</div>
+
+<script>
+const IS = {}; // image store
+
+function pu(input,prevId,rmId,key){
+  const f=input.files[0]; if(!f)return;
+  const r=new FileReader();
+  r.onload=e=>{
+    IS[key]=e.target.result;
+    document.getElementById(prevId).src=e.target.result;
+    document.getElementById(prevId).classList.add('vis');
+    document.getElementById(rmId).classList.add('vis');
+  };
+  r.readAsDataURL(f);
+}
+function ru(e,inId,prevId,rmId,key){
+  e.stopPropagation();
+  IS[key]=null;
+  document.getElementById(inId).value='';
+  document.getElementById(prevId).src='';
+  document.getElementById(prevId).classList.remove('vis');
+  document.getElementById(rmId).classList.remove('vis');
+}
+
+function sw(tab){
+  ['salary','cert','noc','exp','visa','free','bank'].forEach(t=>{
+    document.getElementById('tab-'+t).classList.toggle('active',t===tab);
+    document.getElementById('panel-'+t).classList.toggle('active',t===tab);
+  });
+  document.getElementById('tools').scrollIntoView({behavior:'smooth'});
+}
+
+// HELPERS
+function fd(d){
+  if(!d)return'—';
+  const p=d.split('-');
+  if(p.length===2){const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return m[+p[1]-1]+' '+p[0];}
+  return new Date(d).toLocaleDateString('en-GB',{day:'2-digit',month:'long',year:'numeric'});
+}
+function fm(n,c){return c+' '+(+n||0).toLocaleString('en',{minimumFractionDigits:2,maximumFractionDigits:2});}
+function gv(id){return document.getElementById(id)?document.getElementById(id).value:'';}
+function lh(){return IS.lhData?`<img src="${IS.lhData}" class="doc-lh" alt="Header"/>`:''; }
+function fh(){return IS.fhData?`<img src="${IS.fhData}" class="doc-fh" alt="Footer"/>`:''; }
+function sigLeft(key,name,desig,company){
+  const img=IS[key]?`<img src="${IS[key]}" class="doc-sigi" alt="sig"/>`:'<div style="height:48px;"></div>';
+  return `<div class="doc-sigb">${img}<div class="doc-sigl"></div><div class="doc-sign">${name}</div><div class="doc-sigd">${desig}</div>${company?`<div class="doc-sigd">${company}</div>`:''}</div>`;
+}
+function sigBothLeft(empKey,empName,authKey,authName,authDesig,company){
+  const empImg=IS[empKey]?`<img src="${IS[empKey]}" class="doc-sigi" alt="sig"/>`:'<div style="height:48px;"></div>';
+  const authImg=IS[authKey]?`<img src="${IS[authKey]}" class="doc-sigi" alt="sig"/>`:'<div style="height:48px;"></div>';
+  return `
+    <div class="doc-sigb">${empImg}<div class="doc-sigl"></div><div class="doc-sign">${empName}</div><div class="doc-sigd">Employee</div></div>
+    <div class="doc-sigb">${authImg}<div class="doc-sigl"></div><div class="doc-sign">${authName}</div><div class="doc-sigd">${authDesig}</div>${company?`<div class="doc-sigd">${company}</div>`:''}</div>`;
+}
+
+// SALARY CALC
+function calcSal(){
+  const v=id=>(+gv(id)||0);
+  const net=v('s-bas')+v('s-hra')+v('s-tra')+v('s-oth')+v('s-ovt')-v('s-ded');
+  document.getElementById('s-net').textContent=net.toLocaleString('en',{minimumFractionDigits:2});
+}
+
+// ===== DOCUMENT BUILDERS =====
+
+function buildSalary(){
+  const co=gv('s-co')||'Company Name',ca=gv('s-ca'),cp=gv('s-cp');
+  const en=gv('s-en')||'Employee Name',eid=gv('s-eid')||'—',des=gv('s-des')||'—';
+  const dep=gv('s-dep')||'—',per=fd(gv('s-per')),doj=fd(gv('s-doj'));
+  const bas=+gv('s-bas')||0,hra=+gv('s-hra')||0,tra=+gv('s-tra')||0;
+  const oth=+gv('s-oth')||0,ovt=+gv('s-ovt')||0,ded=+gv('s-ded')||0;
+  const gross=bas+hra+tra+oth+ovt,net=gross-ded;
+  const cur=gv('s-cur'),pay=gv('s-pay'),color='#1b5e3b';
+  return `<div class="doc-preview">${lh()}
+    <div class="doc-in">
+      <div class="doc-hbar" style="border-color:${color};">
+        <div><div class="doc-co" style="color:${color};">${co}</div><div class="doc-cs">${ca}${cp?' · '+cp:''}</div></div>
+        <div class="doc-tb"><div class="doc-ty" style="color:${color};">Salary Slip</div><div class="doc-num">Pay Period: ${per}</div></div>
+      </div>
+      <div class="doc-mg">
+        <div class="doc-mb"><h4>Employee</h4><p><strong>${en}</strong><br/>${des}<br/>${dep}</p></div>
+        <div class="doc-mb"><h4>Details</h4><p>ID: ${eid}<br/>Joined: ${doj}<br/>Payment: ${pay}</p></div>
+      </div>
+      <table class="doc-tbl">
+        <thead><tr style="background:${color};"><th>Earnings</th><th>Amount (${cur})</th><th>Deductions</th><th>Amount (${cur})</th></tr></thead>
+        <tbody>
+          <tr><td>Basic Salary</td><td>${bas.toFixed(2)}</td><td>Total Deductions</td><td>${ded.toFixed(2)}</td></tr>
+          <tr><td>Housing Allowance</td><td>${hra.toFixed(2)}</td><td></td><td></td></tr>
+          <tr><td>Transport Allowance</td><td>${tra.toFixed(2)}</td><td></td><td></td></tr>
+          <tr><td>Other Allowance</td><td>${oth.toFixed(2)}</td><td></td><td></td></tr>
+          <tr><td>Overtime</td><td>${ovt.toFixed(2)}</td><td></td><td></td></tr>
+          <tr style="font-weight:700;background:#f5f5f0;"><td>Gross Salary</td><td>${gross.toFixed(2)}</td><td></td><td></td></tr>
+        </tbody>
+      </table>
+      <div class="doc-tot"><div class="doc-totbox" style="background:${color}10;border:2px solid ${color}30;"><div class="lbl">NET SALARY</div><div class="amt" style="color:${color};">${fm(net,cur)}</div></div></div>
+      <div class="doc-sig">${sigBothLeft('empSig',en,'salAuthSig',gv('s-co')||'Authorized',des,co)}</div>
+      <div class="doc-ft">Computer-generated salary slip · ${co} · ${new Date().toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})}</div>
+    </div>${fh()}</div>`;
+}
+
+function buildCert(){
+  const co=gv('c-co')||'Company Name',ca=gv('c-ca'),cp=gv('c-cp');
+  const hrn=gv('c-hrn')||'Authorized Signatory',hrd=gv('c-hrd')||'HR Manager';
+  const en=gv('c-en')||'Employee Name',des=gv('c-des')||'Employee';
+  const dep=gv('c-dep'),eid=gv('c-eid'),doj=fd(gv('c-doj'));
+  const dt=fd(gv('c-dt'))||fd(new Date().toISOString().split('T')[0]);
+  const sal=+gv('c-sal')||0,cur=gv('c-cur'),pur=gv('c-pur')||'visa application';
+  const cno=gv('c-cno')||'CERT-001',ref=gv('c-ref');
+  const eid2=gv('c-eid2'),eidx=fd(gv('c-eidx')),pp=gv('c-pp'),ppx=fd(gv('c-ppx'));
+  const nat=gv('c-nat'),vis=gv('c-vis');
+  const cNames={AED:'UAE Dirhams',USD:'US Dollars',GBP:'British Pounds',EUR:'Euros',INR:'Indian Rupees',PKR:'Pakistani Rupees',SAR:'Saudi Riyals'};
+  let idParts=[];
+  if(nat) idParts.push(`a <strong>${nat}</strong> national`);
+  if(eid2) idParts.push(`holding Emirates / National ID No. <strong>${eid2}</strong>${eidx!=='—'?' (valid until '+eidx+')':''}`);
+  if(pp) idParts.push(`Passport No. <strong>${pp}</strong>${ppx!=='—'?' (valid until '+ppx+')':''}`);
+  if(vis) idParts.push(`currently residing under <strong>${vis}</strong>`);
+  const idSent=idParts.length>0?`The employee is ${idParts.join(', ')}.`:'';
+  const sigImg=IS['certAuthSig']?`<img src="${IS['certAuthSig']}" style="max-height:50px;max-width:150px;object-fit:contain;display:block;margin-bottom:3px;" alt="sig"/>`:'<div style="height:48px;"></div>';
+  return `<div class="doc-preview">${lh()}
+    <div class="doc-in">
+      <div style="text-align:left;margin-bottom:20px;">
+        <div style="font-size:13px;color:#333;margin-bottom:3px;">Date: <strong>${dt}</strong></div>
+        <div style="font-size:13px;color:#333;margin-bottom:2px;">Cert No: <strong>${cno}</strong></div>
+        ${ref?`<div style="font-size:13px;color:#333;">Ref: <strong>${ref}</strong></div>`:''}
+      </div>
+      <div style="text-align:center;margin-bottom:22px;">
+        <span style="font-size:16px;font-weight:700;color:#1a1814;text-decoration:underline;letter-spacing:0.5px;">Salary Certificate</span>
+      </div>
+      <div style="font-size:14px;line-height:2.1;color:#2c2c2c;text-align:justify;">
+        <p style="margin-bottom:14px;">This is to certify that <strong>${en}</strong>${eid?' (Employee ID: <strong>'+eid+'</strong>)':''} is currently employed with <strong>${co}</strong>${ca?', located at <strong>'+ca+'</strong>':''}, holding the position of <strong>${des}</strong>${dep?' in the <strong>'+dep+'</strong> department':''}.${doj!=='—'?' The employee has been an active member of our organization since <strong>'+doj+'</strong>.':''}</p>
+        <p style="margin-bottom:14px;">The employee draws a monthly salary of <strong style="font-size:15px;">${fm(sal,cur)}</strong> (${cNames[cur]||cur} only). ${idSent}</p>
+        <p style="margin-bottom:14px;">During the course of employment, <strong>${en}</strong> has maintained a professional and dedicated conduct. We confirm that the information stated above is true and accurate to the best of our knowledge.</p>
+        <p style="margin-bottom:14px;">This certificate is being issued at the specific request of the employee for the purpose of <strong>${pur}</strong>, and is valid only for the stated purpose. The company bears no responsibility for any use beyond its intended scope.</p>
+        <p>We wish <strong>${en}</strong> continued success and all the best in their endeavours.</p>
+      </div>
+      <div style="margin-top:36px;text-align:left;">
+        <div style="font-size:14px;color:#333;margin-bottom:16px;font-style:italic;">Thanks &amp; Regards,</div>
+        ${sigImg}
+        <div style="border-bottom:1.5px solid #333;width:200px;margin-bottom:6px;"></div>
+        <div style="font-size:14px;font-weight:700;color:#1a1814;margin-bottom:1px;">${hrn}</div>
+        <div style="font-size:12px;color:#555;margin-bottom:1px;">${hrd}</div>
+        <div style="font-size:12px;color:#555;">${co}</div>
+      </div>
+      <div style="margin-top:20px;padding-top:9px;border-top:1px solid #f0f0f0;font-size:10px;color:#ccc;text-align:center;">This is an official salary certificate · For official use only</div>
+    </div>${fh()}</div>`;
+}
+
+function buildNOC(){
+  const co=gv('n-co')||'Company Name',ca=gv('n-ca'),cp=gv('n-cp');
+  const auth=gv('n-auth')||'Authorized Signatory',authd=gv('n-authd')||'HR Manager';
+  const en=gv('n-en')||'Employee Name',des=gv('n-des')||'Employee';
+  const nid=gv('n-id'),nat=gv('n-nat'),dt=fd(gv('n-dt'))||fd(new Date().toISOString().split('T')[0]);
+  const nno=gv('n-no')||'NOC-001',pur=gv('n-pur')||'the stated purpose';
+  const note=gv('n-note');
+  const sigImg=IS['nocAuthSig']?`<img src="${IS['nocAuthSig']}" style="max-height:50px;max-width:150px;object-fit:contain;display:block;margin-bottom:3px;" alt="sig"/>`:'<div style="height:48px;"></div>';
+  return `<div class="doc-preview">${lh()}
+    <div class="doc-in">
+      <div style="text-align:left;margin-bottom:20px;">
+        <div style="font-size:13px;color:#333;margin-bottom:3px;">Date: <strong>${dt}</strong></div>
+        <div style="font-size:13px;color:#333;">NOC No: <strong>${nno}</strong></div>
+      </div>
+      <div style="text-align:center;margin-bottom:22px;">
+        <span style="font-size:16px;font-weight:700;color:#1a1814;text-decoration:underline;letter-spacing:0.5px;">No Objection Certificate</span>
+      </div>
+      <p style="font-size:13px;color:#555;margin-bottom:18px;">To Whom It May Concern,</p>
+      <div style="font-size:14px;line-height:2.1;color:#2c2c2c;text-align:justify;">
+        <p style="margin-bottom:14px;">This is to certify that <strong>${en}</strong>${nid?', holding ID/Passport No. <strong>'+nid+'</strong>':''}${nat?', a <strong>'+nat+'</strong> national':''},  is currently employed with <strong>${co}</strong>${ca?' located at <strong>'+ca+'</strong>':''} as a <strong>${des}</strong>.</p>
+        <p style="margin-bottom:14px;"><strong>${co}</strong> has <strong>no objection</strong> to ${en} proceeding with <strong>${pur}</strong>.</p>
+        <p style="margin-bottom:14px;">The company confirms that the employee is in good standing and there are no outstanding obligations or disciplinary matters on record.</p>
+        ${note?`<p style="margin-bottom:14px;">${note}</p>`:''}
+        <p>This NOC is issued in good faith and is valid only for the stated purpose. ${co} bears no responsibility for any other use of this document.</p>
+      </div>
+      <div style="margin-top:36px;text-align:left;">
+        <div style="font-size:14px;color:#333;margin-bottom:16px;font-style:italic;">Thanks &amp; Regards,</div>
+        ${sigImg}
+        <div style="border-bottom:1.5px solid #333;width:200px;margin-bottom:6px;"></div>
+        <div style="font-size:14px;font-weight:700;color:#1a1814;margin-bottom:1px;">${auth}</div>
+        <div style="font-size:12px;color:#555;margin-bottom:1px;">${authd}</div>
+        <div style="font-size:12px;color:#555;">${co}</div>
+      </div>
+
+    </div>${fh()}</div>`;
+}
+
+function buildExp(){
+  const co=gv('e-co')||'Company Name',ca=gv('e-ca'),cp=gv('e-cp');
+  const auth=gv('e-auth')||'Authorized Signatory',authd=gv('e-authd')||'HR Manager';
+  const en=gv('e-en')||'Employee Name',des=gv('e-des')||'Employee';
+  const dep=gv('e-dep'),eid=gv('e-eid');
+  const doj=fd(gv('e-doj')),lwd=fd(gv('e-lwd'));
+  const dt=fd(gv('e-dt'))||fd(new Date().toISOString().split('T')[0]);
+  const eno=gv('e-no')||'EXP-001',perf=gv('e-perf');
+  const sigImg=IS['expAuthSig']?`<img src="${IS['expAuthSig']}" style="max-height:50px;max-width:150px;object-fit:contain;display:block;margin-bottom:3px;" alt="sig"/>`:'<div style="height:48px;"></div>';
+  const defaultPerf=`${en} has been a dedicated, hardworking and professional employee throughout their tenure with ${co}. Their contributions to the team have been valuable and commendable.`;
+  return `<div class="doc-preview">${lh()}
+    <div class="doc-in">
+      <div style="text-align:left;margin-bottom:20px;">
+        <div style="font-size:13px;color:#333;margin-bottom:3px;">Date: <strong>${dt}</strong></div>
+        <div style="font-size:13px;color:#333;">Letter No: <strong>${eno}</strong></div>
+      </div>
+      <div style="text-align:center;margin-bottom:22px;">
+        <span style="font-size:16px;font-weight:700;color:#1a1814;text-decoration:underline;letter-spacing:0.5px;">Experience Certificate</span>
+      </div>
+      <p style="font-size:13px;color:#555;margin-bottom:18px;">To Whom It May Concern,</p>
+      <div style="font-size:14px;line-height:2.1;color:#2c2c2c;text-align:justify;">
+        <p style="margin-bottom:14px;">This is to certify that <strong>${en}</strong>${eid?' (Employee ID: <strong>'+eid+'</strong>)':''} was employed with <strong>${co}</strong>${ca?', located at <strong>'+ca+'</strong>':''} as a <strong>${des}</strong>${dep?' in the <strong>'+dep+'</strong> department':''}${doj!=='—'?', from <strong>'+doj+'</strong>':''} to <strong>${lwd}</strong>.</p>
+        <p style="margin-bottom:14px;">${perf||defaultPerf}</p>
+        <p style="margin-bottom:14px;">We wish <strong>${en}</strong> all the best in their future endeavours and highly recommend them to any prospective employer.</p>
+        <p>This experience certificate is issued upon the request of the employee for their future career purposes.</p>
+      </div>
+      <div style="margin-top:36px;text-align:left;">
+        <div style="font-size:14px;color:#333;margin-bottom:16px;font-style:italic;">Thanks &amp; Regards,</div>
+        ${sigImg}
+        <div style="border-bottom:1.5px solid #333;width:200px;margin-bottom:6px;"></div>
+        <div style="font-size:14px;font-weight:700;color:#1a1814;margin-bottom:1px;">${auth}</div>
+        <div style="font-size:12px;color:#555;margin-bottom:1px;">${authd}</div>
+        <div style="font-size:12px;color:#555;">${co}</div>
+      </div>
+
+    </div>${fh()}</div>`;
+}
+
+function buildVisa(){
+  const name=gv('v-name')||'Applicant Name',pp=gv('v-pp'),nat=gv('v-nat');
+  const dob=fd(gv('v-dob')),addr=gv('v-addr'),contact=gv('v-contact');
+  const vtype=gv('v-type'),emb=gv('v-emb'),dest=gv('v-dest');
+  const purp=gv('v-purp')||'tourism',tdate=fd(gv('v-tdate')),dur=gv('v-dur')||'14 days';
+  const dt=fd(gv('v-dt'))||fd(new Date().toISOString().split('T')[0]);
+  const acc=gv('v-acc'),emp=gv('v-emp'),job=gv('v-job'),sal=gv('v-sal'),lv1=fd(gv('v-lv1'));
+  return `<div class="doc-preview">${lh()}
+    <div class="doc-in">
+      <div style="text-align:left;margin-bottom:20px;">
+        <div style="font-size:13px;color:#333;margin-bottom:3px;">Date: <strong>${dt}</strong></div>
+      </div>
+      <div style="text-align:center;margin-bottom:8px;">
+        <span style="font-size:16px;font-weight:700;color:#1a1814;text-decoration:underline;letter-spacing:0.5px;">${vtype} — Cover Letter</span>
+      </div>
+      ${emb?`<div style="text-align:center;margin-bottom:20px;font-size:13px;color:#555;">To: The Visa Officer<br/><strong>${emb}</strong></div>`:'<div style="margin-bottom:18px;"></div>'}
+      <div style="font-size:14px;line-height:2.1;color:#2c2c2c;text-align:justify;">
+        <p style="margin-bottom:14px;">Dear Visa Officer,</p>
+        <p style="margin-bottom:14px;">I, <strong>${name}</strong>${nat?', a <strong>'+nat+'</strong> national':''}${pp?', holding Passport No. <strong>'+pp+'</strong>':''}${dob!=='—'?', born on <strong>'+dob+'</strong>':''}, currently residing at <strong>${addr||'UAE'}</strong>, respectfully submit this cover letter in support of my <strong>${vtype}</strong> application to travel to <strong>${dest||'the destination country'}</strong>.</p>
+        <p style="margin-bottom:14px;">The purpose of my visit is <strong>${purp}</strong>. I intend to travel on <strong>${tdate}</strong> for a duration of <strong>${dur}</strong>${acc?', and I will be staying at <strong>'+acc+'</strong>':''}.</p>
+        ${emp?`<p style="margin-bottom:14px;">I am currently employed as a <strong>${job}</strong> at <strong>${emp}</strong>${sal?', with a monthly salary of <strong>'+sal+'</strong>':''}${lv1!=='—'?'. I have been granted approved leave from <strong>'+lv1+'</strong>':''}. I confirm that I have strong ties to my country of residence and intend to return upon completion of my visit.</p>`:''}
+        <p style="margin-bottom:14px;">I have sufficient financial means to support myself during my stay and will comply with all the terms and conditions of the visa. I undertake to return to my home country before the expiry of the visa.</p>
+        <p>I sincerely request you to grant me the visa and I assure you of my full cooperation. Please find all supporting documents enclosed with this application.</p>
+      </div>
+      <div style="margin-top:36px;text-align:left;">
+        <div style="font-size:14px;color:#333;margin-bottom:16px;font-style:italic;">Yours Sincerely,</div>
+        <div style="border-bottom:1.5px solid #333;width:200px;margin-bottom:6px;"></div>
+        <div style="font-size:14px;font-weight:700;color:#1a1814;margin-bottom:1px;">${name}</div>
+        ${pp?`<div style="font-size:12px;color:#555;">Passport: ${pp}</div>`:''}
+        ${contact?`<div style="font-size:12px;color:#555;">${contact}</div>`:''}
+      </div>
+
+    </div>${fh()}</div>`;
+}
+
+// GENERATE
+function gen(type){
+  const titles={salary:'Salary Slip',cert:'Salary Certificate',noc:'NOC Letter',exp:'Experience Letter',visa:'Visa Cover Letter',free:'Freelance Contract',bank:'Bank Explanation Letter'};
+  const builders={salary:buildSalary,cert:buildCert,noc:buildNOC,exp:buildExp,visa:buildVisa,free:buildFree,bank:buildBank};
+  document.getElementById('docContent').innerHTML=builders[type]();
+  document.getElementById('mTitle').textContent='📄 '+titles[type];
+  document.getElementById('docModal').classList.add('open');
+}
+
+function buildFree(){
+  const fn=gv('fr-fn')||'Freelancer Name',ft=gv('fr-ft')||'Freelancer';
+  const fa=gv('fr-fa'),fe=gv('fr-fe'),fp=gv('fr-fp'),fid=gv('fr-fid');
+  const cn=gv('fr-cn')||'Client Name',cc=gv('fr-cc'),ca=gv('fr-ca'),ce=gv('fr-ce');
+  const pd=gv('fr-pd')||'Professional Services',sd=fd(gv('fr-sd')),ed=fd(gv('fr-ed'));
+  const fee=+gv('fr-fee')||0,cur=gv('fr-cur'),pt=gv('fr-pt'),pm=gv('fr-pm');
+  const no=gv('fr-no')||'CONTRACT-001',del=gv('fr-del'),rev=gv('fr-rev')||'3 rounds';
+  const today=fd(new Date().toISOString().split('T')[0]);
+  const frSig=IS['frFreeSig']?`<img src="${IS['frFreeSig']}" style="max-height:50px;max-width:140px;object-fit:contain;display:block;margin-bottom:3px;" alt="sig"/>`:'<div style="height:48px;"></div>';
+  const clSig=IS['frClientSig']?`<img src="${IS['frClientSig']}" style="max-height:50px;max-width:140px;object-fit:contain;display:block;margin-bottom:3px;" alt="sig"/>`:'<div style="height:48px;"></div>';
+  return `<div class="doc-preview">${lh()}
+    <div class="doc-in">
+      <div style="text-align:left;margin-bottom:20px;">
+        <div style="font-size:13px;color:#333;margin-bottom:3px;">Date: <strong>${today}</strong></div>
+        <div style="font-size:13px;color:#333;">Contract No: <strong>${no}</strong></div>
+      </div>
+      <div style="text-align:center;margin-bottom:22px;">
+        <span style="font-size:16px;font-weight:700;color:#1a1814;text-decoration:underline;letter-spacing:0.5px;">Freelance Service Contract</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;padding:14px;background:#f9f9f7;border-radius:9px;border:1px solid #e8e4dc;">
+        <div><div style="font-size:10px;color:#999;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;">Service Provider</div><div style="font-size:13px;font-weight:700;">${fn}</div><div style="font-size:12px;color:#666;">${ft}</div>${fa?`<div style="font-size:12px;color:#666;">${fa}</div>`:''}${fe?`<div style="font-size:12px;color:#666;">${fe}</div>`:''}${fp?`<div style="font-size:12px;color:#666;">${fp}</div>`:''}${fid?`<div style="font-size:11px;color:#888;">ID: ${fid}</div>`:''}</div>
+        <div><div style="font-size:10px;color:#999;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;">Client</div><div style="font-size:13px;font-weight:700;">${cn}</div>${cc?`<div style="font-size:12px;color:#666;">${cc}</div>`:''}${ca?`<div style="font-size:12px;color:#666;">${ca}</div>`:''}${ce?`<div style="font-size:12px;color:#666;">${ce}</div>`:''}</div>
+      </div>
+      <div style="font-size:14px;line-height:2;color:#2c2c2c;text-align:justify;">
+        <p style="margin-bottom:14px;">This Freelance Service Contract ("Agreement") is entered into as of <strong>${today}</strong>, between <strong>${fn}</strong> ("Service Provider") and <strong>${cn}</strong> ("Client").</p>
+        <p style="margin-bottom:14px;"><strong>1. Services:</strong> The Service Provider agrees to provide the following services: <strong>${pd}</strong>${sd!=='—'?', commencing on <strong>'+sd+'</strong>':''}${ed!=='—'?' and to be completed by <strong>'+ed+'</strong>':''}.</p>
+        ${del?`<p style="margin-bottom:14px;"><strong>2. Deliverables:</strong> ${del.replace(/\n/g,'<br/>')}</p>`:''}
+        <p style="margin-bottom:14px;"><strong>${del?'3':'2'}. Revisions:</strong> This contract includes <strong>${rev}</strong> of revisions. Additional revisions will be quoted separately.</p>
+        <p style="margin-bottom:14px;"><strong>${del?'4':'3'}. Payment:</strong> The total project fee is <strong>${fm(fee,cur)}</strong>, payable via <strong>${pm}</strong>. Payment terms: <strong>${pt}</strong>.</p>
+        <p style="margin-bottom:14px;"><strong>${del?'5':'4'}. Intellectual Property:</strong> Upon receipt of full payment, all intellectual property rights for the completed work shall transfer to the Client. The Service Provider retains the right to display the work in their portfolio.</p>
+        <p style="margin-bottom:14px;"><strong>${del?'6':'5'}. Confidentiality:</strong> Both parties agree to keep all project-related information confidential and not to disclose it to any third party without prior written consent.</p>
+        <p style="margin-bottom:14px;"><strong>${del?'7':'6'}. Termination:</strong> Either party may terminate this agreement with 7 days written notice. Work completed up to the termination date shall be compensated proportionally.</p>
+        <p>Both parties agree to the terms of this contract as indicated by their signatures below.</p>
+      </div>
+      <div style="display:flex;justify-content:space-between;margin-top:36px;gap:24px;">
+        <div style="flex:1;text-align:left;">
+          <div style="font-size:13px;color:#555;margin-bottom:14px;font-style:italic;">Service Provider:</div>
+          ${frSig}<div style="border-bottom:1.5px solid #333;width:180px;margin-bottom:5px;"></div>
+          <div style="font-size:13px;font-weight:700;">${fn}</div>
+          <div style="font-size:12px;color:#555;">${ft}</div>
+        </div>
+        <div style="flex:1;text-align:left;">
+          <div style="font-size:13px;color:#555;margin-bottom:14px;font-style:italic;">Client:</div>
+          ${clSig}<div style="border-bottom:1.5px solid #333;width:180px;margin-bottom:5px;"></div>
+          <div style="font-size:13px;font-weight:700;">${cn}</div>
+          ${cc?`<div style="font-size:12px;color:#555;">${cc}</div>`:''}
+        </div>
+      </div>
+    </div>${fh()}</div>`;
+}
+
+function buildBank(){
+  const name=gv('b-name')||'Applicant Name',acc=gv('b-acc');
+  const addr=gv('b-addr'),contact=gv('b-contact');
+  const dt=fd(gv('b-dt'))||fd(new Date().toISOString().split('T')[0]);
+  const ref=gv('b-ref'),bank=gv('b-bank')||'Bank Name';
+  const branch=gv('b-branch'),period=gv('b-period');
+  const to=gv('b-to')||'The Visa Officer / Bank Manager';
+  const explain=gv('b-explain')||'I would like to provide an explanation regarding my bank statement for the above-mentioned period.';
+  const source=gv('b-source');
+  return `<div class="doc-preview">${lh()}
+    <div class="doc-in">
+      <div style="text-align:left;margin-bottom:20px;">
+        <div style="font-size:13px;color:#333;margin-bottom:3px;">Date: <strong>${dt}</strong></div>
+        ${ref?`<div style="font-size:13px;color:#333;">Ref: <strong>${ref}</strong></div>`:''}
+      </div>
+      <div style="text-align:center;margin-bottom:22px;">
+        <span style="font-size:16px;font-weight:700;color:#1a1814;text-decoration:underline;letter-spacing:0.5px;">Bank Statement Explanation Letter</span>
+      </div>
+      <div style="margin-bottom:18px;font-size:13px;color:#444;line-height:1.8;">
+        <strong>To:</strong> ${to}<br/>
+        ${bank?`<strong>Bank:</strong> ${bank}${branch?' — '+branch:''}<br/>`:''}
+        ${period?`<strong>Statement Period:</strong> ${period}<br/>`:''}
+      </div>
+      <p style="font-size:13px;color:#555;margin-bottom:18px;">Dear Sir / Madam,</p>
+      <div style="font-size:14px;line-height:2.1;color:#2c2c2c;text-align:justify;">
+        <p style="margin-bottom:14px;">I, <strong>${name}</strong>${acc?', account holder (Account No: <strong>'+acc+'</strong>)':''}, currently residing at <strong>${addr||'the address on file'}</strong>${contact?', reachable at <strong>'+contact+'</strong>':''}, am writing this letter to provide clarification and explanation regarding my bank statement${period?' for the period of <strong>'+period+'</strong>':''}.</p>
+        <p style="margin-bottom:14px;">${explain}</p>
+        ${source?`<p style="margin-bottom:14px;">The primary source of funds in my account is: <strong>${source}</strong>. I confirm that all transactions in my account are legitimate and in accordance with applicable laws and regulations.</p>`:''}
+        <p style="margin-bottom:14px;">I confirm that all the information provided in this letter is true and accurate to the best of my knowledge. I am happy to provide any additional documentation or clarification upon request.</p>
+        <p>Thank you for your time and consideration. I sincerely hope this letter addresses any concerns and I look forward to a positive outcome.</p>
+      </div>
+      <div style="margin-top:36px;text-align:left;">
+        <div style="font-size:14px;color:#333;margin-bottom:16px;font-style:italic;">Yours Sincerely,</div>
+        <div style="border-bottom:1.5px solid #333;width:200px;margin-bottom:6px;"></div>
+        <div style="font-size:14px;font-weight:700;color:#1a1814;margin-bottom:1px;">${name}</div>
+        ${contact?`<div style="font-size:12px;color:#555;">${contact}</div>`:''}
+        ${addr?`<div style="font-size:12px;color:#555;">${addr}</div>`:''}
+      </div>
+    </div>${fh()}</div>`;
+}
+
+// FEEDBACK
+function setBankReason(sel){
+  const reasons={
+    visa:'I am submitting my bank statements in support of my visa application. The funds shown in my account are my personal savings accumulated over time through regular employment income. These funds are intended to cover all my travel expenses, accommodation, and living costs during my visit. I confirm that I have no outstanding loans or financial obligations that would affect my ability to meet the requirements.',
+    loan:'I am providing this explanation in support of my loan/mortgage application. The transactions reflected in my bank statement represent my regular income, savings pattern and financial commitments. I confirm that I have a stable financial position and am fully capable of meeting the proposed repayment schedule.',
+    largedep:'I wish to draw your attention to a large deposit reflected in my bank statement. This deposit represents [source — e.g. sale of property / inheritance / business payment / bonus]. I confirm that this is a legitimate and documented transaction and I am happy to provide supporting documentation upon request.',
+    irregular:'My bank statement reflects irregular income patterns due to the nature of my work as a self-employed / freelance professional. My income is project-based and varies month to month. However, my total annual income remains consistent and sufficient to meet my financial obligations. I have maintained this work arrangement for [X years] and continue to operate professionally.',
+    gap:'There is a period of reduced or no income reflected in my bank statement due to a career break / personal circumstances. During this period I relied on my personal savings. I have since resumed employment and my financial position is now stable.',
+    custom:''
+  };
+  const val=sel.value;
+  if(val&&val!=='custom') document.getElementById('b-explain').value=reasons[val]||'';
+}
+
+function submitFeedback(){
+  const name=gv('fb-name'),email=gv('fb-email'),type=gv('fb-type'),msg=gv('fb-msg');
+  if(!msg.trim()){alert('Please write your feedback message before submitting.');return;}
+  // In production connect to your backend/email service here
+  document.getElementById('fb-success').style.display='block';
+  document.getElementById('fb-name').value='';
+  document.getElementById('fb-email').value='';
+  document.getElementById('fb-msg').value='';
+  setTimeout(()=>{document.getElementById('fb-success').style.display='none';},6000);
+}
+function closeMod(){document.getElementById('docModal').classList.remove('open');}
+
+// CLEAN PRINT
+function printDoc(){
+  const content=document.getElementById('docContent').innerHTML;
+  const win=window.open('','_blank');
+  win.document.write(`<!DOCTYPE html><html><head>
+<meta charset="UTF-8"/><title>Document</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+@page{size:A4;margin:0;}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+html,body{background:#fff;}
+body{font-family:'Outfit',sans-serif;}
+.doc-preview{background:#fff;}
+.doc-lh{width:100%;display:block;max-height:110px;object-fit:contain;object-position:center;}
+.doc-fh{width:100%;display:block;max-height:80px;object-fit:contain;object-position:center;}
+.doc-in{padding:26px 34px;}
+.doc-hbar{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px;padding-bottom:13px;border-bottom:2px solid;}
+.doc-co{font-size:18px;font-weight:800;margin-bottom:2px;}
+.doc-cs{font-size:11px;color:#888;line-height:1.5;}
+.doc-tb{text-align:right;}
+.doc-ty{font-size:16px;font-weight:800;text-transform:uppercase;letter-spacing:2px;}
+.doc-num{font-family:'JetBrains Mono',monospace;font-size:10px;color:#888;margin-top:3px;}
+.doc-mg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px;}
+.doc-mb h4{font-size:9px;color:#999;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;font-family:'JetBrains Mono',monospace;}
+.doc-mb p{font-size:12px;line-height:1.6;}
+.doc-tbl{width:100%;border-collapse:collapse;margin-bottom:11px;}
+.doc-tbl th{padding:7px 10px;text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:0.8px;font-weight:700;color:#fff;}
+.doc-tbl td{padding:7px 10px;font-size:12px;border-bottom:1px solid #f0f0f0;}
+.doc-tot{display:flex;justify-content:flex-end;}
+.doc-totbox{border-radius:9px;padding:11px 17px;min-width:175px;}
+.doc-totbox .lbl{font-size:10px;color:#888;margin-bottom:2px;}
+.doc-totbox .amt{font-size:19px;font-weight:800;font-family:'JetBrains Mono',monospace;}
+.doc-sig{display:flex;justify-content:flex-start;margin-top:22px;padding-top:13px;border-top:1px solid #eee;gap:36px;}
+.doc-sigb{text-align:left;}
+.doc-sigi{max-height:46px;max-width:130px;object-fit:contain;display:block;margin-bottom:2px;}
+.doc-sigl{border-bottom:1px solid #444;width:150px;margin-bottom:4px;}
+.doc-sign{font-size:12px;font-weight:700;color:#1a1814;margin-bottom:1px;}
+.doc-sigd{font-size:11px;color:#666;}
+.doc-ft{padding:7px 34px 9px;font-size:10px;color:#ccc;text-align:center;border-top:1px solid #f5f5f5;}
+</style>
+</head><body>${content}</body></html>`);
+  win.document.close();
+  setTimeout(()=>{win.focus();win.print();},600);
+  showToast();
+}
+
+function showToast(){
+  const t=document.getElementById('toast');
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),4000);
+}
+function selAmt(btn,a){document.querySelectorAll('.don-amt').forEach(b=>b.classList.remove('sel'));btn.classList.add('sel');}
+
+window.onload=()=>{
+  const today=new Date().toISOString().split('T')[0];
+  const thisMonth=today.slice(0,7);
+  ['s-per'].forEach(id=>{const el=document.getElementById(id);if(el)el.value=thisMonth;});
+  ['c-dt','n-dt','e-dt','v-dt','b-dt'].forEach(id=>{const el=document.getElementById(id);if(el)el.value=today;});
+};
+</script>
+</body>
+</html>
